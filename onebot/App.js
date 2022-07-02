@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
-import { WebView } from 'react-native-webview';
-import { SafeAreaView, StyleSheet } from 'react-native'
-import SplashScreen from 'react-native-splash-screen';;
 import type { Node } from 'react';
+import React, { useEffect } from 'react';
+import { StyleSheet } from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
+import Ez1 from './src/ez1';
+import Ez2 from './src/ez2';
+;
 
 const App: () => Node = () => {
   useEffect(() => {
@@ -11,9 +13,7 @@ const App: () => Node = () => {
     }, 1500);
   }, [])
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <WebView cacheEnabled={false} source={{ uri: 'https://asiaezsight.com' }} />
-    </SafeAreaView>
+    <Ez2 />
   );
 };
 
